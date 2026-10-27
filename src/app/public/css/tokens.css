@@ -1,0 +1,14 @@
+:root {
+  --bg: #F5EFE3;
+  --surface: #FFFDF7;
+  --ink: #2B2620;
+  --ink-soft: #6B6152;
+  --primary: #2D5D3E;
+  --primary-dark: #1F4430;
+  --gold: #C9A961;
+  --error: #B04A3A;
+  --locked: #C9C2B2;
+
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+}

@@ -1,0 +1,12 @@
+import express from 'express';
+
+const router = express.Router();
+
+router.get('/', (req, res) => {
+  res.render('pages/index', {
+    title: 'Loquela',
+    scripts: '',
+  });
+});
+
+export default router;

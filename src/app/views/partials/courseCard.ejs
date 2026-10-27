@@ -1,0 +1,14 @@
+<article class="course-card" style="--accent: <%- course.color %>;">
+  <h2 class="course-card__title"><%- course.title %></h2>
+  <p class="course-card__subtitle"><%- course.subtitle %></p>
+  <p class="course-card__description"><%- course.description %></p>
+  <div class="course-card__meta">
+    <span class="course-card__lesson-count">
+      <%- course.lessonCount %> lesson<%- course.lessonCount !== 1 ? 's' : '' %>
+    </span>
+    <span class="course-card__progress">
+      <%- course.completedCount %> / <%- course.lessonCount %> completed
+    </span>
+  </div>
+  <a class="course-card__link" href="/courses/<%- course.id %>">Open course</a>
+</article>

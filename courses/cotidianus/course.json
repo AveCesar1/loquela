@@ -1,0 +1,13 @@
+{
+  "id": "cotidianus",
+  "title": "Sermo Cotidianus",
+  "subtitle": "Everyday Latin",
+  "description": "The Latin you actually use: weather, routine, small talk.",
+  "level": "A2-B1",
+  "color": "#2D5D3E",
+  "icon": "laurel",
+  "order": 1,
+  "lessons": [
+    "01-greetings"
+  ]
+}

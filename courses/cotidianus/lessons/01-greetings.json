@@ -1,0 +1,33 @@
+{
+  "id": "01-greetings",
+  "title": "Salvē!",
+  "subtitle": "Greetings",
+  "description": "Say hello, goodbye, and introduce yourself in Latin.",
+  "xp": 10,
+  "order": 1,
+  "shuffle": true,
+  "completionMessage": "Optime laborāvistī!",
+  "exercises": [
+    {
+      "type": "multiple-choice",
+      "prompt": "How do you say 'hello' in Latin?",
+      "options": ["Salvē", "Vāle", "Gratiās", "Dixi"],
+      "correctIndex": 0,
+      "explanation": "'Salvē' means 'hello' (said to one person)."
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "How do you say 'goodbye' in Latin?",
+      "options": ["Vāle", "Salvē", "Et tu", "Ita vero"],
+      "correctIndex": 0,
+      "explanation": "'Vāle' means 'goodbye' (said to one person)."
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "What does 'Gratiās agō' mean?",
+      "options": ["I thank you", "I greet you", "I love you", "I call you"],
+      "correctIndex": 0,
+      "explanation": "'Gratiās agō' literally means 'I give thanks'."
+    }
+  ]
+}

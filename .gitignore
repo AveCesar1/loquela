@@ -1,4 +1,6 @@
-./RESUME.md     # Ignore private resume file
-**/DS_Store     # Ignore all DS_Store files (macOS trash) in the repository
+# Ignore private resume file
+/RESUME.md
+# Ignore all DS_Store files (macOS trash) in the repository
+**/DS_Store
 node_modules/
 progress.json

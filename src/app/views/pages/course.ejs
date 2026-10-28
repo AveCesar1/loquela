@@ -1,0 +1,16 @@
+<%
+const body = `
+<main class="course-page">
+  <h1 class="course-page__title">${course.title}</h1>
+  <p class="course-page__subtitle">${course.subtitle}</p>
+  <p class="course-page__description">${course.description}</p>
+  <p class="course-page__level"><strong>Level:</strong> ${course.level}</p>
+  <p class="course-page__coming-soon">Lessons coming soon.</p>
+</main>
+`;
+%>
+<%- include('../layout', {
+  title: course.title,
+  scripts: '',
+  body: body,
+}) %>

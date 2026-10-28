@@ -1,0 +1,33 @@
+{
+  "id": "02-weather",
+  "title": "De Caelo",
+  "subtitle": "The weather",
+  "description": "Talk about sun, rain, cold, and wind.",
+  "xp": 15,
+  "order": 2,
+  "shuffle": true,
+  "completionMessage": "Caelum serenum est!",
+  "exercises": [
+    {
+      "type": "multiple-choice",
+      "prompt": "How do you say 'it is raining' in Latin?",
+      "options": ["Pluit", "Ningit", "Frigus est", "Calor est"],
+      "correctIndex": 0,
+      "explanation": "'Pluit' means 'it is raining'."
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "What does 'Ningit' mean?",
+      "options": ["It is snowing", "It is raining", "The sun shines", "It is cold"],
+      "correctIndex": 0,
+      "explanation": "'Ningit' means 'it is snowing'."
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "How do you say 'the sun is shining' in Latin?",
+      "options": ["Sol lucet", "Pluit", "Frigus est", "Ningit"],
+      "correctIndex": 0,
+      "explanation": "'Sol lucet' means 'the sun is shining'."
+    }
+  ]
+}

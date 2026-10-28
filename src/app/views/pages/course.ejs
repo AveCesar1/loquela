@@ -1,11 +1,19 @@
 <%
 const body = `
 <main class="course-page">
-  <h1 class="course-page__title">${course.title}</h1>
-  <p class="course-page__subtitle">${course.subtitle}</p>
-  <p class="course-page__description">${course.description}</p>
-  <p class="course-page__level"><strong>Level:</strong> ${course.level}</p>
-  <p class="course-page__coming-soon">Lessons coming soon.</p>
+  <header class="course-header">
+    <h1 class="course-header__title">${course.title}</h1>
+    <p class="course-header__subtitle">${course.subtitle}</p>
+    <p class="course-header__meta">
+      <strong>Level:</strong> ${course.level} |
+      <strong>XP:</strong> ${progress.xp} |
+      <strong>Lessons:</strong> ${course.lessons.length}
+    </p>
+  </header>
+  <div class="lesson-map">
+${lessonNodes}
+  </div>
+  <p class="course-back"><a href="/">Back to courses</a></p>
 </main>
 `;
 %>

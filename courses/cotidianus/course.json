@@ -8,6 +8,8 @@
   "icon": "laurel",
   "order": 1,
   "lessons": [
-    "01-greetings"
+    "01-greetings",
+    "02-weather",
+    "03-morning-routine"
   ]
 }

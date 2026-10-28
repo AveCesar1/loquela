@@ -1,0 +1,19 @@
+<%
+const lessonNumber = id.split('-')[0];
+%>
+<div class="lesson-node lesson-node--<%= state %>">
+  <% if (state === 'completed') { %>
+    <a class="lesson-node__link" href="/courses/<%- courseId %>/lessons/<%= id %>">
+      <span class="lesson-node__circle">✓</span>
+      <span class="lesson-node__label"><%= title %></span>
+    </a>
+  <% } else if (state === 'available') { %>
+    <a class="lesson-node__link" href="/courses/<%- courseId %>/lessons/<%= id %>">
+      <span class="lesson-node__circle"><%= lessonNumber %></span>
+      <span class="lesson-node__label"><%= title %></span>
+    </a>
+  <% } else { %>
+    <span class="lesson-node__circle locked"></span>
+    <span class="lesson-node__label"><%= title %></span>
+  <% } %>
+</div>

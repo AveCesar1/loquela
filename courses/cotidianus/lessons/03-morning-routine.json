@@ -1,0 +1,40 @@
+{
+  "id": "03-morning-routine",
+  "title": "Matutina Ordo",
+  "subtitle": "Morning routine",
+  "description": "Describe your morning: waking, washing, dressing.",
+  "xp": 20,
+  "order": 3,
+  "shuffle": true,
+  "completionMessage": "Optime factum!",
+  "exercises": [
+    {
+      "type": "multiple-choice",
+      "prompt": "How do you say 'I wake up' in Latin?",
+      "options": ["Vigilo", "Lavo", "Vestior", "Cibo"],
+      "correctIndex": 0,
+      "explanation": "'Vigilo' means 'I am awake / I wake up'."
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "What does 'Lavo' mean?",
+      "options": ["I wash", "I dress", "I eat", "I sleep"],
+      "correctIndex": 0,
+      "explanation": "'Lavo' means 'I wash'."
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "How do you say 'I dress' in Latin?",
+      "options": ["Vestior", "Vigilo", "Lavo", "Cibo"],
+      "correctIndex": 0,
+      "explanation": "'Vestior' means 'I am clothed / I dress'."
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "What does 'Cibo' mean?",
+      "options": ["I eat", "I drink", "I sleep", "I walk"],
+      "correctIndex": 0,
+      "explanation": "'Cibo' means 'I eat'."
+    }
+  ]
+}

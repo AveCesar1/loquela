@@ -1,0 +1,21 @@
+<%
+const body = [
+  '<main class="lesson-shell">',
+  '<header class="lesson-topbar">',
+  '<a class="lesson-close" href="/courses/' + courseId + '">×</a>',
+  '<h1 class="lesson-title">' + lesson.title + '</h1>',
+  '</header>',
+  '<div class="lesson-progress">',
+  '<div class="lesson-progress__bar"></div>',
+  '</div>',
+  '<div id="exercise-root">' + firstExerciseHtml + '</div>',
+  '<script id="lesson-data" type="application/json" data-course-id="' + courseId + '" data-lesson-id="' + lessonId + '">' + JSON.stringify(lesson) + '</script>',
+  '<script type="module" src="/js/lessonEngine.js"></script>',
+  '</main>'
+].join('');
+%>
+<%- include('../layout', {
+  title: lesson.title,
+  scripts: '',
+  body: body,
+}) %>

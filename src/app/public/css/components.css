@@ -101,6 +101,125 @@
   background: var(--primary-dark);
 }
 
+.lesson-map {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+
+.lesson-node {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--locked);
+  border-radius: 8px;
+}
+
+.lesson-node__circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.lesson-node__label {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.lesson-node__link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.lesson-node--completed .lesson-node__circle {
+  background: var(--primary);
+  color: var(--gold);
+}
+
+.lesson-node--available .lesson-node__circle {
+  background: var(--primary);
+  color: #FFFDF7;
+  animation: pulse 2s infinite;
+}
+
+.lesson-node--locked .lesson-node__circle {
+  background: var(--locked);
+  color: #FFFDF7;
+}
+
+.lesson-node--locked .lesson-node__circle.locked::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 10px;
+  border: 2px solid currentColor;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  top: 3px;
+  left: 1px;
+}
+
+.lesson-node--locked .lesson-node__circle.locked::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 14px;
+  background: currentColor;
+  border-radius: 0 0 3px 3px;
+  margin: 3px auto 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lesson-node--available .lesson-node__circle {
+    animation: none;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.course-back {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.course-back a {
+  color: var(--primary);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.course-back a:hover {
+  text-decoration: underline;
+}
+
 .course-page {
   max-width: 600px;
   margin: 0 auto;

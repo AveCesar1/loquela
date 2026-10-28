@@ -1,0 +1,8 @@
+<div class="exercise">
+  <p class="exercise__prompt"><%= exercise.prompt %></p>
+  <div class="exercise__options">
+    <% exercise.options.forEach((option, index) => { %>
+      <button type="button" class="option" data-index="<%= index %>"><%= option %></button>
+    <% }) %>
+  </div>
+</div>
